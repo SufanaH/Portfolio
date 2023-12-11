@@ -1,14 +1,17 @@
 nav.navbar {
-  padding: 18px 0;
+  padding: 2px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32s ease-in-out;
+  backdrop-filter: blur(40px);
 
   &.scrolled {
     padding: 0px 0;
     backdrop-filter: blur(10px);
+    background: rgba(217, 217, 217, 0.1);
+    
   }
 
   a.navbar-brand {
@@ -125,6 +128,7 @@ nav.navbar {
   .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+    
   }
 
   .navbar-toggler-icon {
@@ -162,6 +166,7 @@ nav.navbar {
         transform: rotate(45deg);
         background-color: #fff;
         height: 2px;
+        
       }
 
       &:before {

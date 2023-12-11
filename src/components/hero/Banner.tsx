@@ -79,12 +79,7 @@ const Banner: React.FC = () => {
                     a Software Developer, supporting the digital transformation
                     of Saudi companies. Possesses a blend of technical expertise
                     in MERN Stack and UX/UI Design and effective communication
-                    skills for successful project outcomes. Committed to
-                    self-development and knowledge sharing, demonstrated through
-                    participation in various courses on product management and
-                    project management tailored for emerging companies.
-                    Additionally, engaged in mentoring activities and delivered
-                    several public speeches on blockchain-related topics
+                    skills for successful project outcomes.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
@@ -101,7 +96,7 @@ const Banner: React.FC = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Header-Img" className="heroImage" />
                 </div>
               )}
             </TrackVisibility>

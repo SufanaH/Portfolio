@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="logo-fotter" />
           </Col>
           <Col xs={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

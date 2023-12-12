@@ -74,17 +74,6 @@ const NavBar: React.FC = () => {
               >
                 Projects
               </Nav.Link>
-              <Nav.Link
-                href="#Designs"
-                className={
-                  activeLink === "designs"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("designs")}
-              >
-                Designs
-              </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">

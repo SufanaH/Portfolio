@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import { Row, Col, Container } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
@@ -12,7 +13,7 @@ const Banner: React.FC = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
   const toRotate = ["Full-Stack Developer", "Web Designer", "UI/UX Designer"];
-  const period = 2000;
+  const period = 1000;
 
   useEffect(() => {
     const ticker = setInterval(() => {

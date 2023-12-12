@@ -1,13 +1,8 @@
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-/*   background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../../assets/images/banner-bg.jpg");
- */
   @media (max-width: 768px) {
-    padding: 120px 20px ;
+    padding: 120px 20px;
   }
 
   .tagline {
@@ -73,7 +68,6 @@
       margin-left: 200px;
       margin-top: -90px;
     }
-
   }
 
   @keyframes updown {

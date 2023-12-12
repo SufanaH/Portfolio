@@ -8,7 +8,6 @@ import navIcon3 from "../../assets/images/nav-icon3.svg";
 
 import "./_Footer.scss";
 
-
 const Footer: React.FC = () => {
   return (
     <footer className="footer">

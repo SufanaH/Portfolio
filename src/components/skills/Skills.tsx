@@ -34,11 +34,7 @@ const Skills: React.FC = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Full Stack Development, Web Design and Development, Also
-                Committed to self-development and knowledge sharing,
-                demonstrated through participation in various courses on product
-                management and project management tailored for emerging
-                companies. Additionally, engaged in mentoring activities and
+                Committed to self-development and knowledge sharing, engaged in mentoring activities and
                 delivered several public speeches
               </p>
               <Carousel

@@ -20,6 +20,21 @@
     margin-bottom: 16px;
     display: inline-block;
   }
+  .animation-text-effect{
+    position: absolute;
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .effect-text{
+    margin-top: 230px;
+    @media (max-width: 768px) {
+margin-top: 130px;
+    }
+  }
 
   h1 {
     font-size: 65px;

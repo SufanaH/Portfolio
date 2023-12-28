@@ -65,8 +65,9 @@ const Banner: React.FC = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
+                  <div className="animation-text-effect">
                   <h1>
-                    {`Hi! I'm Sufana Alkushi`}{" "}
+                    {`Hi! I'm Sufana Alkushi`}{" "} <br></br>
                     <span
                       className="txt-rotate"
                       data-period="1000"
@@ -75,7 +76,8 @@ const Banner: React.FC = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>
+                  </div>
+                  <p className="effect-text">
                     Aspiring Full-Stack developer with 2 years of experience as
                     a Software Developer, supporting the digital transformation
                     of Saudi companies. Possesses a blend of technical expertise

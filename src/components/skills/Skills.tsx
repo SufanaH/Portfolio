@@ -39,6 +39,20 @@ const Skills: React.FC = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576, // Adjust the breakpoint as needed
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -56,8 +70,10 @@ const Skills: React.FC = () => {
                 {skillsData.map((skill, index) => (
                   <div key={index} className="item">
                     <img src={skill.image} alt={skill.title} className="skills-images" />
-                    <h5>{skill.title}</h5>
-                    <p>{skill.description}</p>
+                    <div className="skills-contetnt">
+                      <h5>{skill.title}</h5>
+                      <p>{skill.description}</p>
+                    </div>
                   </div>
                 ))}
               </Slider>

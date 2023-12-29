@@ -80,7 +80,7 @@ const Banner: React.FC = () => {
                   <p className="effect-text">
                     Aspiring Full-Stack developer with 2 years of experience as
                     a Software Developer, supporting the digital transformation
-                    of Saudi companies. Possesses a blend of technical expertise
+                    of Saudi entities. Possesses a blend of technical expertise
                     in MERN Stack and UX/UI Design and effective communication
                     skills for successful project outcomes.
                   </p>

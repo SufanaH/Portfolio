@@ -31,6 +31,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      @media (max-width: 768px) {
+
+      }
 
       img {
         width: 80px; // Adjust the width as needed

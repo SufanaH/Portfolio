@@ -64,6 +64,12 @@ export const Projects: React.FC = () => {
       image: ui1,
     },
     {
+      image: ui5,
+    },
+    {
+      image: ui6,
+    },
+    {
       image: ui2,
     },
     {
@@ -72,23 +78,17 @@ export const Projects: React.FC = () => {
     {
       image: ui4,
     },
-    {
-      image: ui5,
-    },
-    {
-      image: ui6,
-    },
   ];
 
   const artDesigns = [
-    {
-      image: ui12,
-    },
     {
       image: ui13,
     },
     {
       image: ui14,
+    },
+    {
+      image: ui12,
     },
     {
       image: ui15,

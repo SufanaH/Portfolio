@@ -1,29 +1,44 @@
 import React from "react";
-import meter1 from "../../assets/images/meter1.svg";
-import meter3 from "../../assets/images/meter3.svg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import dev1 from '../../assets/images/skills/dev1.png'
+import dev2 from '../../assets/images/skills/dev2.png'
+import dev3 from '../../assets/images/skills/dev3.png'
+import dev4 from '../../assets/images/skills/dev4.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import "./_Skills.scss";
 
 const Skills: React.FC = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+  const skillsData = [
+    {
+      image: dev1,
+      title: "Frontend Development",
+      description: "React.js, TypeScript, JavaScript, SCSS, Bootstrap, HTML, CSS, Redux",
     },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+    {
+      image: dev2,
+      title: "UI/UX Design",
+      description: "Adobe Illustrator, Figma, Prototyping Design, Graphic Design",
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
+    {
+      image: dev3,
+      title: "Backend Development",
+      description: "Node.js, Express",
     },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
+    {
+      image: dev4,
+      title: "Database Management",
+      description: "MongoDB",
     },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   };
 
   return (
@@ -34,41 +49,18 @@ const Skills: React.FC = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Committed to self-development and knowledge sharing, engaged in mentoring activities and
-                delivered several public speeches
+                Committed to self-development and knowledge sharing, engaged in
+                mentoring activities and delivered several public speeches
               </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Frontend Development</h5>
-                  <p>
-                    {" "}
-                    React.js, TypeScript, JavaScript, SCSS, Bootstrap, HTML,
-                    CSS, Redux
-                  </p>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>UI/UX Design</h5>
-                  <p>
-                    Adobe Illustrator, Figma, Prototyping Design, Graphic Design
-                  </p>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Backend Development</h5>
-                  <p>Node.js, Express</p>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Database Management</h5>
-                  <p>MongoDB</p>
-                </div>
-              </Carousel>
+              <Slider {...settings}>
+                {skillsData.map((skill, index) => (
+                  <div key={index} className="item">
+                    <img src={skill.image} alt={skill.title} className="skills-images" />
+                    <h5>{skill.title}</h5>
+                    <p>{skill.description}</p>
+                  </div>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

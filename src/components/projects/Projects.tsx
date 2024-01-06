@@ -20,6 +20,7 @@ import ui17 from "../../assets/images/uiux/17.png";
 import ui18 from "../../assets/images/uiux/18.png";
 import ui19 from "../../assets/images/uiux/19.png";
 import ui20 from "../../assets/images/uiux/20.png";
+import ui21 from "../../assets/images/uiux/21.png";
 
 import TrackVisibility from "react-on-screen";
 import "./_Projects.scss";
@@ -83,6 +84,9 @@ export const Projects: React.FC = () => {
   const artDesigns = [
     {
       image: ui13,
+    },
+    {
+      image: ui21,
     },
     {
       image: ui14,

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 <img src={navIcon3} alt="twitter-icon" />
               </a>
             </div>
-            <p>© Copyright 2023.</p>
+            <p>Copyright © 2024 Sufana Alkushi</p>
           </Col>
         </Row>
       </Container>

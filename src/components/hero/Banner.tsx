@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
-  const toRotate = ["Full-Stack Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Full-Stack Developer", "Web Development", "UI/UX Designer"];
   const period = 1000;
 
   useEffect(() => {
@@ -71,7 +71,7 @@ const Banner: React.FC = () => {
                     <span
                       className="txt-rotate"
                       data-period="1000"
-                      data-rotate='[ "Full-Stack Developer", "Web Designer", "UI/UX Designer" ]'
+                      data-rotate='[ "Full-Stack Developer", "Web Development", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>

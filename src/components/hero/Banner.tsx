@@ -84,9 +84,6 @@ const Banner: React.FC = () => {
                     in MERN Stack, UX Researcher, UX/UI Designer and effective communication
                     skills for successful project outcomes.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
                 </div>
               )}
             </TrackVisibility>

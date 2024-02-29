@@ -5,6 +5,7 @@ import logo from "../../assets/images/logo.png";
 import navIcon1 from "../../assets/images/nav-icon1.svg";
 import navIcon2 from "../../assets/images/nav-icon2.svg";
 import navIcon3 from "../../assets/images/nav-icon3.svg";
+import navIcon4 from "../../assets/images/nav-icon4.svg";
 
 import "./_Footer.scss";
 
@@ -27,6 +28,9 @@ const Footer: React.FC = () => {
               <a href="https://twitter.com/Suufana">
                 <img src={navIcon3} alt="twitter-icon" />
               </a>
+              <a href="https://medium.com/@sufana">
+                  <img src={navIcon4} alt="medium-icon" />
+                </a>
             </div>
             <p>Copyright © 2024 Sufana Alkushi</p>
           </Col>

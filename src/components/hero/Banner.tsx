@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
-  const toRotate = ["Full-Stack Developer", "Web Development", "UI/UX Designer"];
+  const toRotate = ["UX Researcher", "Web Development", "UI/UX Designer"];
   const period = 1000;
 
   useEffect(() => {
@@ -71,17 +71,17 @@ const Banner: React.FC = () => {
                     <span
                       className="txt-rotate"
                       data-period="1000"
-                      data-rotate='[ "Full-Stack Developer", "Web Development", "UI/UX Designer" ]'
+                      data-rotate='[ "UX Researcher", "Web Development", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   </div>
                   <p className="effect-text">
-                    Aspiring Full-Stack developer with 2 years of experience as
+                  A goal oriented person with strong attention to detail with 2 years of experience as
                     a Software Developer, supporting the digital transformation
                     of Saudi Entities. Possesses a blend of technical expertise
-                    in MERN Stack and UX/UI Design and effective communication
+                    in MERN Stack, UX Researcher, UX/UI Designer and effective communication
                     skills for successful project outcomes.
                   </p>
                   <button onClick={() => console.log("connect")}>

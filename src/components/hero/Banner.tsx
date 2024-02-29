@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { Row, Col, Container } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 import headerImg from "../../assets/images/HeroSection.png";
 import "./_Banner.scss";

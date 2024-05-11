@@ -3,6 +3,8 @@ import dev1 from '../../assets/images/skills/dev1.png'
 import dev2 from '../../assets/images/skills/dev2.png'
 import dev3 from '../../assets/images/skills/dev3.png'
 import dev4 from '../../assets/images/skills/dev4.png'
+import dev5 from '../../assets/images/skills/dev5.png'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,14 +14,19 @@ import "./_Skills.scss";
 const Skills: React.FC = () => {
   const skillsData = [
     {
-      image: dev1,
-      title: "Frontend Development",
-      description: "React.js, TypeScript, JavaScript, SCSS, Bootstrap, HTML, CSS, Redux",
+      image: dev5,
+      title: "UX Research",
+      description: "Surveys, Interviews, Competitive analysis, Mapping competitors, Analysing market trends",
     },
     {
       image: dev2,
       title: "UI/UX Design",
-      description: "Adobe Illustrator, Figma, Prototyping Design, Graphic Design",
+      description: "UX Design Methodologies, Prototyping Design, Usability Testing, Figma, Adobe Illustrator",
+    },
+    {
+      image: dev1,
+      title: "Frontend Development",
+      description: "React.js, TypeScript, JavaScript, SCSS, Bootstrap, HTML, CSS, Redux",
     },
     {
       image: dev3,

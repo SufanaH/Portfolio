@@ -30,7 +30,7 @@
       overflow: hidden;
   
       .nav-item {
-        width: 33.33333%;
+        width: 25%;
       }
   
       .nav-link {
@@ -75,7 +75,12 @@
     }
   
     #projects-tabs-tab-second {
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    #projects-tabs-tab-second-2 {
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
   

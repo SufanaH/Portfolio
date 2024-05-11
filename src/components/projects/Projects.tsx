@@ -18,9 +18,13 @@ import ui15 from "../../assets/images/uiux/15.png";
 import ui16 from "../../assets/images/uiux/16.png";
 import ui17 from "../../assets/images/uiux/17.png";
 import ui18 from "../../assets/images/uiux/18.png";
-import ui19 from "../../assets/images/uiux/19.png";
 import ui20 from "../../assets/images/uiux/20.png";
 import ui21 from "../../assets/images/uiux/21.png";
+import caseStudy2 from "../../assets/caseStudies/2.png";
+import caseStudy1 from "../../assets/caseStudies/1.png";
+import caseStudy3 from "../../assets/caseStudies/3.png";
+import caseStudy4 from "../../assets/caseStudies/4.png";
+import caseStudy5 from "../../assets/caseStudies/5.png";
 
 import TrackVisibility from "react-on-screen";
 import "./_Projects.scss";
@@ -30,9 +34,47 @@ interface Project {
   description: string;
   imgUrl: string;
   gitHubLink?: string;
+  LinkTo?: string;
 }
 
 export const Projects: React.FC = () => {
+  const caseStudies = [
+    {
+      title: "Beach Activities Booking App",
+      description: "Product Design Case Study",
+      imgUrl: caseStudy2,
+      LinkTo:
+        "https://medium.com/@sufana/beach-activities-booking-app-product-design-case-study-54b5314cf088",
+    },
+    {
+      title: "Fitness App",
+      description: "Product Design Case Study",
+      imgUrl: caseStudy1,
+      LinkTo:
+        "https://medium.com/@sufana/fitness-app-product-design-case-study-0c6f2009451f",
+    },
+    {
+      title: "PlantMate",
+      description: "Case Study in Responsive Web Design for Plant Enthusiasts",
+      imgUrl: caseStudy3,
+      LinkTo:
+        "https://medium.com/@sufana/market-research-case-study-on-a-responsive-e-commerce-product-plant-mate-fba085c1cf31",
+    },
+    {
+      title: "Redesign Albilad Mobile Banking App",
+      description: "UX Case Study with Visual Enhancements",
+      imgUrl: caseStudy4,
+      LinkTo:
+        "https://medium.com/@sufana/redesign-albilad-mobile-banking-app-a-ux-case-study-with-visual-enhancements-1277a8d69dc1",
+    },
+    {
+      title: "Waiting Dashboard",
+      description: "UX Research Case Study for Sehaty App",
+      imgUrl: caseStudy5,
+      LinkTo:
+        "https://medium.com/@sufana/waiting-dashboard-ux-research-case-study-for-sehaty-app-aba5fbfc3092",
+    },
+  ];
   const projects: Project[] = [
     {
       title: "E-commerce Management App",
@@ -83,10 +125,10 @@ export const Projects: React.FC = () => {
 
   const artDesigns = [
     {
-      image: ui13,
+      image: ui21,
     },
     {
-      image: ui21,
+      image: ui13,
     },
     {
       image: ui14,
@@ -105,9 +147,6 @@ export const Projects: React.FC = () => {
     },
     {
       image: ui18,
-    },
-    {
-      image: ui19,
     },
     {
       image: ui20,
@@ -140,10 +179,15 @@ export const Projects: React.FC = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                        <Nav.Link eventKey="first">UX Case Studies</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">UI UX </Nav.Link>
+                        <Nav.Link eventKey="second">
+                          Full Stack Projects
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second-2">UI</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Designs</Nav.Link>
@@ -157,12 +201,19 @@ export const Projects: React.FC = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
+                          {caseStudies.map((caseStudy, index) => (
+                            <ProjectCard key={index} {...caseStudy} />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
                           {projects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      <Tab.Pane eventKey="second-2">
                         <Carousel>
                           {uiUxDesigns.map((design, index) => (
                             <Carousel.Item key={index}>

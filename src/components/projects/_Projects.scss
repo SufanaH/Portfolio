@@ -28,9 +28,18 @@
       border-radius: 50px;
       background-color: rgb(255 255 255 / 10%);
       overflow: hidden;
+      @media (max-width: 768px) {
+        width: 100%;
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        
+        }
   
       .nav-item {
         width: 25%;
+        @media (max-width: 768px) {
+          width: 90%;
+          }
       }
   
       .nav-link {
@@ -72,21 +81,41 @@
     #projects-tabs-tab-first {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 55px 0px 0px 55px;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 2px;
+        border-radius: 0px;
+        }
     }
   
     #projects-tabs-tab-second {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 2px;
+        border-radius: 0px;
+        }
     }
     #projects-tabs-tab-second-2 {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 2px;
+        border-radius: 0px;
+        }
     }
   
     #projects-tabs-tab-third {
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 0 55px 55px 0;
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 2px;
+        border-radius: 0px;
+        }
     }
   
     .proj-imgbx {
@@ -129,6 +158,10 @@
           font-weight: 700;
           letter-spacing: 0.8px;
           line-height: 1.1em;
+          @media (max-width: 768px) {
+            font-size: 20px;
+
+            }
         }
   
         span {

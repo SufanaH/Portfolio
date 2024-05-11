@@ -38,6 +38,7 @@ interface Project {
 }
 
 export const Projects: React.FC = () => {
+  
   const caseStudies = [
     {
       title: "Beach Activities Booking App",

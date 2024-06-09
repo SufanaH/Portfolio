@@ -5,21 +5,21 @@ import projImg1 from "../../assets/images/project-img1.png";
 import projImg2 from "../../assets/images/project-img2.png";
 import projImg3 from "../../assets/images/project-img3.png";
 import projImg4 from "../../assets/images/project-img4.png";
-import ui1 from "../../assets/images/uiux/1.png";
 import ui2 from "../../assets/images/uiux/2.png";
 import ui3 from "../../assets/images/uiux/3.png";
 import ui4 from "../../assets/images/uiux/4.png";
 import ui5 from "../../assets/images/uiux/5.png";
-import ui6 from "../../assets/images/uiux/6.png";
 import ui12 from "../../assets/images/uiux/12.png";
 import ui13 from "../../assets/images/uiux/13.png";
-import ui14 from "../../assets/images/uiux/14.png";
 import ui15 from "../../assets/images/uiux/15.png";
 import ui16 from "../../assets/images/uiux/16.png";
 import ui17 from "../../assets/images/uiux/17.png";
 import ui18 from "../../assets/images/uiux/18.png";
-import ui20 from "../../assets/images/uiux/20.png";
 import ui21 from "../../assets/images/uiux/21.png";
+import ui22 from "../../assets/images/uiux/22.png";
+import ui23 from "../../assets/images/uiux/23.png";
+import ui24 from "../../assets/images/uiux/24.png";
+import ui25 from "../../assets/images/uiux/25.png";
 import caseStudy2 from "../../assets/caseStudies/2.png";
 import caseStudy1 from "../../assets/caseStudies/1.png";
 import caseStudy3 from "../../assets/caseStudies/3.png";
@@ -105,13 +105,7 @@ export const Projects: React.FC = () => {
 
   const uiUxDesigns = [
     {
-      image: ui1,
-    },
-    {
       image: ui5,
-    },
-    {
-      image: ui6,
     },
     {
       image: ui2,
@@ -122,6 +116,15 @@ export const Projects: React.FC = () => {
     {
       image: ui4,
     },
+    {
+      image: ui22,
+    },
+    {
+      image: ui23,
+    },
+    {
+      image: ui24,
+    },
   ];
 
   const artDesigns = [
@@ -129,10 +132,10 @@ export const Projects: React.FC = () => {
       image: ui21,
     },
     {
-      image: ui13,
+      image: ui25,
     },
     {
-      image: ui14,
+      image: ui13,
     },
     {
       image: ui12,
@@ -148,9 +151,6 @@ export const Projects: React.FC = () => {
     },
     {
       image: ui18,
-    },
-    {
-      image: ui20,
     },
   ];
 

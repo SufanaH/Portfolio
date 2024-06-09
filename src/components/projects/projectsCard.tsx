@@ -1,7 +1,11 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 interface ProjectCardProps {
   title: string;
@@ -27,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imgUrl, g
             )}
             {LinkTo && (
               <a href={LinkTo} target="_blank" rel="noopener noreferrer" className="white-icon">
-                <FontAwesomeIcon icon={faMedium} size="3x" color="white" />
+                <FontAwesomeIcon className="arrow-icon" icon={faArrowUpRightFromSquare} size="2x" color="white" />
               </a>
             )}
           </div>
